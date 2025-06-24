@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #1976d2;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+.search-box {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 0 16px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  background-color: white;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+}
