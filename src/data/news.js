@@ -17,4 +17,10 @@ export const newsList = [
     image: "https://source.unsplash.com/random/400x200?energy",
     summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
   },
+  {
+    id: 4,
+    title: "Giá xăng dầu tiếp tục giảm sâu",
+    image: "https://source.unsplash.com/random/400x200?energy",
+    summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
+  },
 ];
