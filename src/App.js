@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import NewsCard from "./UI/NewsCard";
 import { newsList } from "./data/news";
 
 function App() {
+  const mainNews = newsList[0]; // Tin chính
+  const sideNews = newsList.slice(1); // Các tin phụ
+
   const [searchQuery, setSearchQuery] = useState("");
 
   const filteredNews = newsList.filter((news) =>
@@ -43,25 +46,31 @@ function App() {
           <span className="icon-menu">☰</span>
         </div>
       </div>
+      <main>
+        <div className="main-layout">
+          {/* Tin lớn bên trái */}
+          <div className="main-news">
+            <img src={mainNews.image} alt="main" />
+            <h2>{mainNews.title}</h2>
+            <p>{mainNews.summary}</p>
+            <p className="meta">VietnamNet · 35 phút · 980 liên quan</p>
+          </div>
 
+          {/* Tin phụ bên phải */}
+          <div className="side-news">
+            {sideNews.map((news) => (
+              <div key={news.id} className="side-item">
+                <img src={news.image} alt={news.title} className="side-img" />
+                <div className="side-text">
+                  <p className="title">{news.title}</p>
+                  <p className="meta">3 phút · 1457 liên quan</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
-      <main className="news-container">
-        {filteredNews.length > 0 ? (
-          filteredNews.map((news) => (
-            <NewsCard
-              key={news.id}
-              title={news.title}
-              image={news.image}
-              summary={news.summary}
-            />
-          ))
-        ) : (
-          <p style={{ gridColumn: "1 / -1", textAlign: "center", color: "#888" }}>
-            Không tìm thấy kết quả nào.
-          </p>
-        )}
       </main>
-
       <footer>
         © 2025 Báo Mới Clone | Thiết kế bằng React + CSS thuần
       </footer>

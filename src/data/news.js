@@ -23,4 +23,28 @@ export const newsList = [
     image: "https://source.unsplash.com/random/400x200?energy",
     summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
   },
+  {
+    id: 5,
+    title: "Giá xăng dầu tiếp tục giảm sâu",
+    image: "https://source.unsplash.com/random/400x200?energy",
+    summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
+  },
+  {
+    id: 6,
+    title: "Giá xăng dầu tiếp tục giảm sâu",
+    image: "https://source.unsplash.com/random/400x200?energy",
+    summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
+  },
+  {
+    id: 7,
+    title: "Giá xăng dầu tiếp tục giảm sâu",
+    image: "https://source.unsplash.com/random/400x200?energy",
+    summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
+  },
+  {
+    id: 8,
+    title: "Giá xăng dầu tiếp tục giảm sâu",
+    image: "https://source.unsplash.com/random/400x200?energy",
+    summary: "Theo Bộ Công Thương, giá xăng giảm nhờ điều chỉnh thuế...",
+  },
 ];
