@@ -2,7 +2,7 @@ export const newsList = [
   {
     id: 1,
     title: "Thị trường chứng khoán hôm nay biến động mạnh",
-    image: "https://source.unsplash.com/random/400x200?business",
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dsc.com.vn%2Fbao-cao-phan-tich%2Fchung-khoan-hom-nay-bao-cao-cap-nhat-hang-ngay&psig=AOvVaw1VgmGrmXhA3eEjANNyX3sz&ust=1751080425751000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPDeipnRkI4DFQAAAAAdAAAAABAE",
     summary: "Nhiều mã cổ phiếu tăng mạnh giữa làn sóng đầu tư mới...",
   },
   {
